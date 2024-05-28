@@ -1,3 +1,7 @@
+## VR mode
+
+This is a VR mode version
+
 ## Credits
 
 Design + Dev by Faraz Shaikh ([@CantBeFaraz](https://x.com/CantBeFaraz))

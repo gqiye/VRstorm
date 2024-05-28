@@ -1,6 +1,6 @@
 import { Size } from "@react-three/fiber";
 import * as THREE from "three";
-
+// 通过从反射相机视角渲染场景来模拟镜像效果
 export class MirrorTexture extends THREE.WebGLRenderTarget {
   camera: THREE.Camera;
 
