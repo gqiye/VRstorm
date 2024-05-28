@@ -276,6 +276,7 @@ export function MirrorMaterial({
   });
 
   return (
+    // <></>
     <CSM<typeof THREE.MeshStandardMaterial>
       baseMaterial={baseMaterial}
       vertexShader={vertexShader}

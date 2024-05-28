@@ -1,5 +1,5 @@
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { useThree,Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Loader } from "./Loader";
 import { Post } from "./Post";
@@ -12,10 +12,12 @@ import { Rain } from "./components/Rain";
 import { Road } from "./components/Road";
 import { Rocks } from "./components/Rocks";
 import { Sign } from "./components/Sign";
+import { VRbutton } from "./VRbutton";
 import "./styles.css";
 import { MainScreen } from "./ui/MainScreen";
 import { StartScreen } from "./ui/StartScreen";
 import { useApp } from "./useApp";
+
 
 function Thing() {
   return (
@@ -25,17 +27,19 @@ function Thing() {
       </Rain>
 
       {/* <Grass /> */}
-      {/* <Rail /> */}
-      {/* <Bicycle /> */}
-      {/* <Sign /> */}
-      {/* <Rocks /> */}
-      {/* <Clouds /> */}
+      <Rail />
+      <Bicycle />
+      <Sign />
+      <Rocks />
+      <Clouds />
     </group>
   );
 }
 
 export default function App() {
   const loaded = useApp((s) => s.loaded);
+
+
 
   return (
     <>
@@ -57,10 +61,11 @@ export default function App() {
           <PerspectiveCamera position={[4.94, 2.42, -1.88]} makeDefault />
 
           <Lights />
-          <Post />
+          {/* <Post /> */}
           <Thing />
 
           <Loader />
+          < VRbutton/>
         </Suspense>
       </Canvas>
     </>
