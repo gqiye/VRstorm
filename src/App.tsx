@@ -17,7 +17,7 @@ import "./styles.css";
 import { MainScreen } from "./ui/MainScreen";
 import { StartScreen } from "./ui/StartScreen";
 import { useApp } from "./useApp";
-import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from '@vercel/analytics/react';
 
 
 function Thing() {
@@ -69,6 +69,7 @@ export default function App() {
           < VRbutton/>
         </Suspense>
       </Canvas>
+      <Analytics/>
     </>
   );
 }
