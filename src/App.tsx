@@ -17,6 +17,7 @@ import "./styles.css";
 import { MainScreen } from "./ui/MainScreen";
 import { StartScreen } from "./ui/StartScreen";
 import { useApp } from "./useApp";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 function Thing() {
