@@ -93,7 +93,7 @@ export function MainScreen() {
             <ByLine />
 
             <Credit
-              href="https://github.com/gqiye/VRstorm"
+              href="https://codesandbox.io/p/devbox/r3f-ts-playground-7ffjx5?file=%2FREADME.md"
               target="_blank"
               whileTap={{ scale: 0.9 }}
             >
