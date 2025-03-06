@@ -12,7 +12,7 @@ const StyledByLine = styled(motion.a)`
 export function ByLine() {
   return (
     <StyledByLine
-      href="https://github.com/gqiye"
+      href=""
       target="_blank"
       rel="noopener noreferrer"
       onClick={(e) => {
@@ -21,7 +21,7 @@ export function ByLine() {
       whileTap={{ scale: 0.9 }}
     >
       by <u>qiye</u>
-      <p>base faraz shaikh</p>
+      {/* <p>base faraz shaikh</p> */}
       
     </StyledByLine>
   );
